@@ -1,0 +1,95 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+.parallax1 {
+    background-image: url("p1.jpg");
+    min-height: 800px; 
+    position: relative;
+    /* efek scrollnya */
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+.parallax2 {
+    background-image: url("p0.jpg");
+    min-height: 800px; 
+    position: relative;
+    opacity: 0.65;
+    /* efek scrollnya */
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+  }
+  .parallax3 {
+    background-image: url("p8.jpg");
+    min-height: 800px; 
+    position: relative;
+    opacity: 0.65;
+    /* efek scrollnya */
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+  }
+  .parallax5 {
+    background-image: url("p9.jpeg");
+    min-height: 800px; 
+    position: relative;
+    opacity: 0.65;
+    /* efek scrollnya */
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+  }
+  .parallax4 {
+    background-image: url("p7.jpg");
+    min-height: 800px; 
+    position: relative;
+    /* efek scrollnya */
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+  }
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+  
+  .caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  .ktk{
+    position: relative;
+    left: 200px;
+    width: 890px;
+    border: 2px solid rgb(37, 37, 37);
+    top: 30%;
+    left: 20%;
+    font-size: 20px;
+
+    }
+  .text{
+      text-align: center;
+      line-height: 20px;
+      font-size: 17px;
+      color: white;
+      top:30%;
+      text-indent: 5%;
+
+  }
+  

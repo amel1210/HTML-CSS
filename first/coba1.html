@@ -1,0 +1,175 @@
+<head>
+<body>
+<title>Percobaan pertama</title>
+<head>
+<style>
+body{
+	color: #000000;
+	background-image: url(img.jpeg);
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 50%;
+	line-height: 1.3em;
+    margin: 1px;}
+* {
+  box-sizing: border-box;
+}
+img {
+  vertical-align: middle;
+}
+.container {
+    max-width: 1000px;
+    position: relative;
+    margin: left;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 25%;
+  width: auto;
+  padding: 10px;
+  margin-top: -10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 1.0em;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 1px 1px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left ;
+  width: 10%;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<p> Welcome to my first web </p>
+<p> Hii... aku Amelia Dwi Cahyani, kalian bisa panggil aku Icha. aku lahir pada 11 november 2003 di surabaya. aku adalah penggemar berat kpop, terutama TWICE.<br>Twice sendiri merupakan grirlgrup yang cukup lama sudah debut, sekitar hampir 5 tahun. dan aku mulai menjadi penggemar mereka sudah sekitar 3 tahun. di Twice yang paling aku suka adalah Jeongyeon, tetapi ya suka semuanya juga. aku suka twice atau lebihtepatnya mengidolakan mereka karena mereka sangat keren.</br> </p>
+<p> <ins>they are twice!!</ins> idola favorit ku di dunia perkpopan. mereka debut pada 20 oktober 2015, mereka di debutkan oleh agensi jyp entertaiment.<p/>
+<p> Twice memiliki 9 anggota, 3 dari jepang, 1 dari taiwan, dan 5 dari korea. mereka memulai debut dengan lagu 'like ohh ahh'. pada saat itu masih belum banyak yang mengikuti mereka. mereka mulai banyak memiliki penggemar pada era 'cheer up', saat itu 'sha sha sha' lirik part yang dinyanyikan <i>sana</i> viral dan bahkan menjadi bentuk aegyo(tingkah lucu) baru di korea bahkan di jepang. </p>
+
+<div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="1.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="2.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="4.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="5.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="6.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="7.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="11.jpg" style="width:100%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+        <h2>Photo</h2>
+      <p id="caption"></p>
+    </div>
+    </div>
+  </div>
+  
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+</body>
+</head>

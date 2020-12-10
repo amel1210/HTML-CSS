@@ -1,0 +1,16 @@
+#membuat database#
+2 cara: 
+1. menggunakan bahasa SQL(creat database ...)
+2. langsung lewat home (crate new database)
+#membuat tabel database#
+menggunakan bahasa SQL *CREATE TABLE nama_table (nama_field1 INT, nama_fieldd2 VARCHAR(20));*
+nama table ga boleh dipisah, 'table' di isi nama e yg mau dibuat
+#mengisi tabel#
+menggunakan bahasa SQL *INSERT INTO nama_table VALUES (123456789, "Nama");*
+#menghapus tabel#
+menggunakan bahasa SQl *DELETE FROM nama_table where nama="Nama";
+thank u
+
+form: seperti pendataan biodata
+database: data yg dimasukan dalam form
+primery key: kata kunci(nomer kunci)

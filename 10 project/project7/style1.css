@@ -1,0 +1,126 @@
+body{
+    background-color: #ffffff;
+  }
+  *{
+    margin: 0;
+    padding: 0;  
+}
+.nav{
+    margin: auto;
+    text-align: center;
+    font-family: fantasy;
+    width: 100%;
+    font-size: 20px;
+}
+.nav ul{
+    background: #1d1c1c;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    width: 1309px;
+    height: 55px;
+    padding: 0 20px;
+}
+.nav ul li{
+    float: left;
+}
+.nav ul li:hover{
+    background:#c2c2c279;
+    
+}
+.nav ul li:hover a{
+    color: #000000;
+}
+.nav ul li a{
+    display: block;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.background {
+  background-color: #0d0d22;
+  min-height: 1500px; 
+  position: relative;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+.header{
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+  }
+  .header h1{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Noto Serif JP', sans-serif;
+    font-size: 55px;
+  }
+  .header span{
+    color: #00d5ff;
+  }
+  .tagline{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    top: 50%;
+    left: 50%;
+  }
+  .tagline p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    text-align: center;
+    color:  #ffffff;
+  }
+  figure {
+    float: left;
+    width: 290px;
+    height: 220px;
+    padding: 5px;
+    margin: 20px;
+  }
+.text{
+  text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    color: #000000;
+}
+.text h3{
+  font-size: 40px;
+  line-height: 90px;
+}
+img {
+  width: 290px;
+  height: 200px;
+  text-align: center;
+
+}
+.bigbox{
+  width: 1300px;
+  height: 400px;
+  position: relative;
+  border: 2px solid #ffffff00;
+  margin-bottom: 20px;
+  left: 20px;
+  top: 69px;
+ }
+.kotak{
+  width: 290px;
+  height: 300px;
+  float: left;
+  margin-bottom: 20px;
+  border: 2px solid #ffffff27;
+  background-color: #1d1c1c;
+ }
+ .box {
+  float: left;
+  width: 74.5px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #ffffff00;
+ }
+ .textbox{
+   text-align: center;
+   color: #d5d5ddda;
+ }

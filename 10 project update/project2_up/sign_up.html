@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+<style>
+  /* style tambahan yh */
+  body{
+    background-image: url(img/mu.jpg);
+  }
+  .content-wrapper{
+    position: relative;
+    top: 100px;
+    left: 400px;
+    width: 600px;
+    background-color:rgba(197, 180, 180, 0) ;    
+  }
+  .header h1{
+    font-size: 60px;
+  }
+</style>
+</head>
+<body>
+<div class="content-wrapper">
+    <section class="header">
+            <h1>SykNine</h1>
+<hr>
+    </section>
+<form class="form-horizontal">
+<div class="form-group row">
+    <label id="text" for="inputPassword3" class="col-sm-3 col-form-label">Nama  :</label>
+    <div class="col-sm-6">
+        <input type="text" class="form-control" name="nama" placeholder="nama...">
+    </div>
+</div>
+<div class="form-group row">
+    <label id="text" for="inputPassword3" class="col-sm-3 col-form-label">Nomer Telp  :</label>
+    <div class="col-sm-6">
+      <input type="number" class="form-control" name="telp" placeholder="no telp... ">
+    </div>
+  </div>
+<div class="form-group row">
+  <label id="text" for="inputEmail" class="col-sm-3 col-form-label">Email  :</label>
+  <div class="col-sm-6">
+    <input type="email" class="form-control" name="email" placeholder="email...">
+  </div>
+</div>
+<div class="form-group row">
+  <label id="text" for="inputPassword3" class="col-sm-3 col-form-label">Password  :</label>
+  <div class="col-sm-6">
+    <input type="password" class="form-control" name="password" placeholder="password...">
+  </div>
+</div>
+<div class="form-group row">
+    <label id="text" for="inputPassword3" class="col-sm-3 col-form-label">Gender  :</label>
+  <div class="offset-sm-0 col-sm-4">
+    <div class="form-check">
+      <input type="radio" class="form-check-input" name="exampleCheck2">
+      <label id="text" class="form-check-label" for="exampleCheck2">Pria</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="exampleCheck2">
+        <label id="text" class="form-check-label" for="exampleCheck2">Wanita</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" name="exampleCheck2">
+        <label id="text" class="form-check-label" for="exampleCheck2">Tidak Menyebutkan</label>
+      </div>
+  </div>
+</div>
+<div class="card-footer">
+    <button type="submit" class="btn btn-info">Sign up</button>
+  <a href="sign_in.html" class="btn btn-default float-right">Cancel</a>
+</div>
+</div>
+</form>
+</div>
+></body>

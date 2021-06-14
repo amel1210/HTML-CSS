@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="page.css">
+</head>
+<body>
+<div class="wrapper">
+  
+<div id="navbar">
+  <div id="navbar-right">
+    <a href="home.html">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>
+  </div>
+</div>
+
+<div id="bagi"></div>
+<div id="awal">
+    <div id="awal-text">
+            <h1>ARMY Bomb in Details</h1>
+            <p>The size of the third version of the ARMY Bomb is 98 x 98 x 224 so it's smaller than the both versions 1 and 2. It is made of ABS, PC and silicon and weights approximately 150g. In the package you will find - beside the light stick - a strap, nonwoven bag, user manual and a quality guarantee card.</p>
+    </div>
+    <div id="awal-image"></div>
+</div>
+<div class="parallax">
+  <div class="caption">
+    <h1>Get Lovely & Special Moments</h1>
+    <p>For me it is absolutely worth it. Especially these days with them being synced, it really gives you a more involved and participatory concert experience. I had mine out the whole time and was still able to record some videos with my other hand so that is possible to do.</p>
+<button class="button"><span>Buy It Now - $235</span></button>
+  </div>
+</div>
+<div class="bigbox">
+  <div class="box">
+    <h2 style="text-align:center">Slideshow Gallery</h2>
+  
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/cont.jpg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/ver1.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">23/ 5</div>
+      <img src="img/ver2.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/ver3.png" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/ver4.png" style="width:100%">
+    </div>
+  
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="img/cont.jpg" style="width:100%" onclick="currentSlide(1)" alt="Product Content">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/ver1.png" style="width:100%" onclick="currentSlide(2)" alt="Ver 1">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/ver1.png" style="width:100%" onclick="currentSlide(3)" alt="Ver 2">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/ver3.png" style="width:100%" onclick="currentSlide(4)" alt="Ver 3">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/ver4.png" style="width:100%" onclick="currentSlide(5)" alt="Ver 4">
+      </div>    
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+<div class="ya">
+  <h1 style="color: rgb(0, 0, 0);">experient great</h1>
+  <p style="font-size: 18px; color: rgb(0, 0, 0); line-height: 10px;">Favorite for a special person</p>
+  <div class="card">
+    <img src="img/ver3.png" alt="army bomb" style="width:100%">
+    <h1>Army Bomb</h1>
+    <p class="price">$24.99</p>
+    <p>Some text about the lightstick. Bla bla bla bla</p>
+    <a><button></button></a>
+  </div>
+  <div class="card">
+    <img src="img/ver1.png" alt="army bomb" style="width:100%">
+    <h1>Army Bomb</h1>
+    <p class="price">$24.99</p>
+    <p>Some text about the lightstick. Bla bla bla bla</p>
+    <a><button></button></a>
+  </div>
+  <div class="card">
+    <img src="img/ver2.png" alt="army bomb" style="width:100%">
+    <h1>Army Bomb</h1>
+    <p class="price">$24.99</p>
+    <p>Some text about the lightstick. Bla bla bla bla</p>
+    <a><button></button></a>
+    <p></p>
+  </div>
+</div>
+<div style="color:rgb(0, 0, 0);background-color:gray;text-align:center;padding:20px 80px;text-align: justify;">
+  <div class="text">
+  @LightStik
+  </div>
+</div>
+</body>
+<script>
+// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    document.getElementById("navbar").style.padding = "20px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "40px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demo");
+    var captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+</html>
